@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-
     <!--robot tag calls for separate inertia file for different bodies-->
     <xacro:include filename="inertial_macros.xacro"/>
 
@@ -14,7 +13,7 @@
     </material>
 
     <material name="lavender">
-        <color rgba="0.9 0.9 0.98 0.8"/>
+        <color rgba="0.9 0.9 98 0.8"/>
     </material>
 
     <material name="amber">
@@ -25,10 +24,6 @@
         <color rgba="1.0 0.5 0.0 0.5"/>
     </material>
 
-     <material name="white">
-        <color rgba="1.0 1.0 1.0 1"/>
-    </material>
-
 
     <!--BASE LINK, the main origin of robot-->
     <link name="base_link">
@@ -36,34 +31,34 @@
 
     <!--CHASIS LINK, a cylindrical robot-->
 
-    <joint name="round_body_joint" type="fixed">
+    <joint name="chassis_joint" type="fixed">
         <parent link="base_link"/>
-        <child link="round_body"/>
-        <!--origin at center of base_link, with 10 cm ground clearance-->
-        <origin xyz="0 0 0.05"/>
+        <child link="chassis"/>
+        <!--origin at center of base_link-->
+        <origin xyz="0 0 0"/>
     </joint>
 
-    <link name="round_body">
+    <link name="chassis">
         <visual>
-            <origin xyz="0 0 0.05" rpy="0 0 0"/>
+            <!--<origin xyz="0.0 0 0.075" rpy="0 0 0"/>-->
             <geometry>
                 <cylinder length="0.15" radius="0.3"/>
             </geometry>
             <material name="crimson"/>
         </visual>
         <collision>
-            <origin xyz="0 0 0.05" rpy="0 0 0"/>
+            <!--<origin xyz="0.0 0 0.075" rpy="0 0 0"/>-->
             <geometry>
                 <cylinder length="0.15" radius="0.3"/>
             </geometry>
         </collision>
-        <xacro:inertial_cylinder mass="0.3" length="0.15" radius="0.3">
-            <origin xyz="0 0 0" rpy="0 0 0"/>
-        </xacro:inertial_cylinder>
+        <xacro:inertial_box mass="0.5" x="0.3" y="0.3" z="0.15">
+            <origin xyz="0.15 0 0.075" rpy="0 0 0"/>
+        </xacro:inertial_box>
     </link>
 
-    <gazebo reference="round_body">
-        <material>Gazebo/Crimson</material>
+    <gazebo reference="chassis">
+        <material>Gazebo/White</material>
     </gazebo>
 
     <!--LEFT WHEEL-->
@@ -71,7 +66,7 @@
     <joint name="left_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="left_wheel"/>
-        <origin xyz="0 0.32 0" rpy="-${3.14/2} 0 0"/>
+        <origin xyz="0 0.175 0" rpy="-${pi/2} 0 0"/>
         <axis xyz="0 0 1"/>
     </joint>
 
@@ -80,7 +75,7 @@
             <geometry>
                 <cylinder length="0.04" radius="0.05"/>
             </geometry>
-            <material name="white"/>
+            <material name="blue"/>
         </visual>
         <collision>
             <geometry>
@@ -94,14 +89,14 @@
     </link>
 
     <gazebo reference="left_wheel">
-        <material>Gazebo/White</material>
+        <material>Gazebo/Blue</material>
     </gazebo>
 
     <!--RIGHT WHEEL-->
     <joint name="right_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="right_wheel"/>
-        <origin xyz="0 -0.32 0" rpy="${3.14/2} 0 0"/>
+        <origin xyz="0 -0.175 0" rpy="${pi/2} 0 0"/>
         <axis xyz="0 0 -1"/>
     </joint>
 
@@ -110,7 +105,7 @@
             <geometry>
                 <cylinder length="0.04" radius="0.05"/>
             </geometry>
-            <material name="coral"/>
+            <material name="blue"/>
         </visual>
         <collision>
             <geometry>
@@ -122,12 +117,12 @@
         </xacro:inertial_cylinder>
     </link>
     <gazebo reference="right_wheel">
-        <material>Gazebo/Coral</material>
+        <material>Gazebo/Green</material>
     </gazebo>
 
     <!--CASTER wHEEL-->
     <joint name="caster_wheel_joint" type="fixed">
-        <parent link="round_body"/>
+        <parent link="chassis"/>
         <child link="caster_wheel"/>
         <origin xyz="0.24 0 0" rpy="0 0 0"/>
     </joint>
@@ -137,7 +132,7 @@
             <geometry>
                 <sphere radius="0.05"/>
             </geometry>
-            <material name="lavender"/>
+            <material name="black"/>
         </visual>
         <collision>
             <geometry>
@@ -149,7 +144,7 @@
         </xacro:inertial_sphere>
     </link>
     <gazebo reference="caster_wheel">
-        <material>Gazebo/Lavender</material>
+        <material>Gazebo/Black</material>
         <mu1 value="0.001"/>
         <mu2 value="0.001"/>
     </gazebo>
