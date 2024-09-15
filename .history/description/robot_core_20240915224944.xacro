@@ -5,26 +5,18 @@
     <xacro:include filename="inertial_macros.xacro"/>
 
     <!--Declare color tags to give it to materials-->
+    <xacro:property name="red" value="1.0 0.0 0.0 1"/>
+    
+    <xacro:property name="green" value="0.0 1.0 0.0 1"/>
 
-    <material name="red">
-        <color rgba="1.0 0.0 0.0 1"/>
-    </material>
-    <material name="green">
-        <color rgba="0.0 1.0 0.0 1"/>
-    </material>
-    <material name="blue">
-        <color rgba="0.0 0.0 1.0 1"/>
-    </material>
-    <material name="cyan">
-        <color rgba="0.0 1.0 1.0 1"/>
-    </material>
-    <material name="yellow">
-        <color rgba="1.0 1.0 0.0 1"/>
-    </material>
-    <material name="magenta">
-        <color rgba="1.0 0.0 1.0 1"/>
-    </material>
+    <xacro:property name="blue" value="0.0 0.0 1.0 1"/>
 
+    <xacro:property name="cyan" value="0.0 1.0 1.0 1"/>
+
+    <xacro:property name="yellow" value="1.0 1.0 0.0 1"/>
+
+    <xacro:property name="magenta" value="1.0 0.0 1.0 1"/>
+ 
     <!--BASE LINK, the main origin of robot-->
     <link name="base_link">
     </link>
@@ -44,7 +36,8 @@
             <geometry>
                 <cylinder length="0.15" radius="0.3"/>
             </geometry>
-            <material name="red"/>
+            <material>
+            </ma
         </visual>
         <collision>
             <origin xyz="0 0 0.05" rpy="0 0 0"/>
@@ -66,7 +59,7 @@
     <joint name="left_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="left_wheel"/>
-        <origin xyz="-0.15 0.25 0" rpy="-${3.14/2} 0 0"/>
+        <origin xyz="0 0.32 0" rpy="-${3.14/2} 0 0"/>
         <axis xyz="0 0 1"/>
     </joint>
 
@@ -89,14 +82,14 @@
     </link>
 
     <gazebo reference="left_wheel">
-        <material>Gazebo/magenta</material>
+        <material>Gazebo/White</material>
     </gazebo>
 
     <!--RIGHT WHEEL-->
     <joint name="right_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="right_wheel"/>
-        <origin xyz="-0.15 -0.25 0" rpy="${3.14/2} 0 0"/>
+        <origin xyz="0 -0.32 0" rpy="${3.14/2} 0 0"/>
         <axis xyz="0 0 -1"/>
     </joint>
 
@@ -117,14 +110,14 @@
         </xacro:inertial_cylinder>
     </link>
     <gazebo reference="right_wheel">
-        <material>Gazebo/yellow</material>
+        <material>Gazebo/Coral</material>
     </gazebo>
 
     <!--CASTER wHEEL-->
     <joint name="caster_wheel_joint" type="fixed">
         <parent link="round_body"/>
         <child link="caster_wheel"/>
-        <origin xyz="0.24 0 -0.05" rpy="0 0 0"/>
+        <origin xyz="0.24 0 0" rpy="0 0 0"/>
     </joint>
 
     <link name="caster_wheel">
@@ -144,7 +137,7 @@
         </xacro:inertial_sphere>
     </link>
     <gazebo reference="caster_wheel">
-        <material>Gazebo/blue</material>
+        <material>Gazebo/Lavender</material>
         <mu1 value="0.001"/>
         <mu2 value="0.001"/>
     </gazebo>

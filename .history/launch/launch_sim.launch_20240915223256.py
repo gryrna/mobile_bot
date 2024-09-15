@@ -20,7 +20,7 @@ def generate_launch_description():
     )
 
     #Inlcuding Gazebo launch file from Gazebo_ros package
-    #This is to launch Gazebo
+    
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             [os.path.join(

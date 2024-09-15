@@ -20,7 +20,6 @@ def generate_launch_description():
     )
 
     #Inlcuding Gazebo launch file from Gazebo_ros package
-    #This is to launch Gazebo
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             [os.path.join(
@@ -28,7 +27,7 @@ def generate_launch_description():
     )
 
     #Include the spawner node from the gazebo_ros package
-    #This is to spawn robot in Gazebo
+    
     spawn_entity = Node(package='gazebo_ros',executable='spawn_entity.py',
                         arguments=['-topic','robot_description',
                                    '-entity','mobile_bot'],
