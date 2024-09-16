@@ -52,10 +52,9 @@
             <!--this plugin tag moves data in-out of Gazebo-->
             <plugin name="laser_controller" filename="libgazebo_ros_ray_sensor.so">
                 <ros>
-                    <!--ros topic name-->
                     <argument>~/out:=scan</argument>
                 </ros>
-                <!--publishes LaserScan messages on the /Scan topic in lidar_link TF frame-->
+                <!--publishes LaserScan on the /Scan topic-->
                 <output_type>sensor_msgs/LaserScan</output_type>
                 <frame_name>lidar_link</frame_name>
             </plugin>

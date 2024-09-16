@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <joint name="camera_joint" type="fixed">
+        <parent link="round_body"/>
+        <child link="camera_link"/>
+        <origin xyz="0.3 0 0.05" rpy="0 0 0"/>
+    </joint>
+    <link name="camera_link">
+        <visual>
+            <geometry>
+                <box size="0.010 0.03 0.03"/>
+            </geometry>
+            <material name="green"/>
+        </visual>
+    </link>
+
+    <gazebo reference="camera_link">
+        <material>Gazebo/Green</material>
+        <sensor name="camera" type="camera'>
+            
+    </gazebo>
+
+    <joint name="camera_optical_joint" type="fixed">
+        <parent link="camera_link"/>
+        <child link="camera_link_optical"/>
+        <origin xyz="0 0 0" rpy="${-3.14/2} 0 ${3.14/2}"/>
+    </joint>
+    <link name="camera_link_optical">
+    </link>
+
+</robot>
