@@ -15,8 +15,8 @@
     <material name="blue">
         <color rgba="0.0 0.0 1.0 1"/>
     </material>
-    <material name="orange">
-        <color rgba="1.0 0.65 0 1"/>
+    <material name="cyan">
+        <color rgba="0.0 1.0 1.0 1"/>
     </material>
     <material name="yellow">
         <color rgba="1.0 1.0 0.0 1"/>
@@ -63,19 +63,19 @@
 
     <!--LEFT WHEEL-->
 
-     <joint name="left_wheel_joint" type="continuous">
+     <joint name="right_wheel_joint" type="continuous">
         <parent link="base_link"/>
-        <child link="left_wheel"/>
+        <child link="right_wheel"/>
         <origin xyz="-0.15 0.25 0" rpy="${-3.14/2} 0 0"/>
         <axis xyz="0 0 1"/>
     </joint>
 
-    <link name="left_wheel">
+    <link name="right_wheel">
         <visual>
             <geometry>
                 <cylinder length="0.04" radius="0.05"/>
             </geometry>
-            <material name="orange"/>
+            <material name="yellow"/>
         </visual>
         <collision>
             <geometry>
@@ -86,8 +86,8 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
         </xacro:inertial_cylinder>
     </link>
-    <gazebo reference="left_wheel">
-        <material>Gazebo/Orange</material>
+    <gazebo reference="right_wheel">
+        <material>Gazebo/Yellow</material>
     </gazebo>
 
     <!--RIGHT WHEEL-->

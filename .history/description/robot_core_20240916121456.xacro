@@ -15,8 +15,8 @@
     <material name="blue">
         <color rgba="0.0 0.0 1.0 1"/>
     </material>
-    <material name="orange">
-        <color rgba="1.0 0.65 0 1"/>
+    <material name="cyan">
+        <color rgba="0.0 1.0 1.0 1"/>
     </material>
     <material name="yellow">
         <color rgba="1.0 1.0 0.0 1"/>
@@ -75,7 +75,7 @@
             <geometry>
                 <cylinder length="0.04" radius="0.05"/>
             </geometry>
-            <material name="orange"/>
+            <material name="cyan"/>
         </visual>
         <collision>
             <geometry>
@@ -87,7 +87,7 @@
         </xacro:inertial_cylinder>
     </link>
     <gazebo reference="left_wheel">
-        <material>Gazebo/Orange</material>
+        <material>Gazebo/Cyan</material>
     </gazebo>
 
     <!--RIGHT WHEEL-->

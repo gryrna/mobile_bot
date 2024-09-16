@@ -3,17 +3,16 @@
     <!--keeping LIDAR sensor as a separate xacro file-->
     <joint name="lidar_joint" type="fixed">
         <parent link="round_body"/>
-        <child link="lidar_link"/>
-        <!--Putting it at center of robot body-->
-        <origin xyz="0 0 0.14" rpy="0 0 0"/>
+        <child link="lidar_frame"/>
+        <origin xyz="0 0.1 0.175" rpy="0 0 0"/>
     </joint>
 
-    <link name="lidar_link">
+    <link name="lidar_frame">
         <visual>
             <geometry>
                 <cylinder radius="0.05" length="0.04"/>
             </geometry>
-            <material name="green"/>
+            <material name="red"/>
         </visual>
         <collision>
             <geometry>
@@ -25,9 +24,8 @@
         </xacro:inertial_cylinder>
     </link>
 
-    <gazebo reference="lidar_link">
-        <material>Gazebo/Green</material>
-        <!--sensor tag makes the cylinder behave as a sensor-->
+    <gazebo reference="lidar_frame">
+        <material>Gazebo/Red</material>
         <sensor name="laser" type="ray">
             <pose>0 0 0 0 0 0</pose>
             <visualize>true</visualize>
@@ -35,16 +33,14 @@
             <ray>
                 <scan>
                     <horizontal>
-                    <!--90 samples for 90 degree sweep, -45 to +45-->
-                        <samples>90</samples>
-                        <min_angle>-0.7854</min_angle>
-                        <max_angle>0.7854</max_angle>
+                        <samples>360</samples>
+                        <min_angle>-3.14</min_angle>
+                        <max_angle>3.14</max_angle>
                     </horizontal>
                 </scan>
                 <range>
-                <!--keeping max range to 5, further trim sample size-->
                     <min>0.3</min>
-                    <max>5</max>
+                    <max>12</max>
                 </range>
             </ray>
             <plugin name="laser_controller" filename="libgazebo_ros_ray_sensor.so">
@@ -52,7 +48,7 @@
                     <argument>~/out:=scan</argument>
                 </ros>
                 <output_type>sensor_msgs/LaserScan</output_type>
-                <frame_name>lidar_link</frame_name>
+                <frame_name>lidar_frame</frame_name>
             </plugin>
         </sensor>
     </gazebo>

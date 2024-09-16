@@ -5,7 +5,7 @@
         <parent link="round_body"/>
         <child link="lidar_link"/>
         <!--Putting it at center of robot body-->
-        <origin xyz="0 0 0.14" rpy="0 0 0"/>
+        <origin xyz="0 0 0.15" rpy="0 0 0"/>
     </joint>
 
     <link name="lidar_link">
@@ -35,16 +35,15 @@
             <ray>
                 <scan>
                     <horizontal>
-                    <!--90 samples for 90 degree sweep, -45 to +45-->
+                    <!--90 samples for 90 degree sweep, -45 to +-->
                         <samples>90</samples>
                         <min_angle>-0.7854</min_angle>
                         <max_angle>0.7854</max_angle>
                     </horizontal>
                 </scan>
                 <range>
-                <!--keeping max range to 5, further trim sample size-->
                     <min>0.3</min>
-                    <max>5</max>
+                    <max>12</max>
                 </range>
             </ray>
             <plugin name="laser_controller" filename="libgazebo_ros_ray_sensor.so">

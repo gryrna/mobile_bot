@@ -87,7 +87,7 @@
         </xacro:inertial_cylinder>
     </link>
     <gazebo reference="left_wheel">
-        <material>Gazebo/Orange</material>
+        <material>Gazebo/Cyan</material>
     </gazebo>
 
     <!--RIGHT WHEEL-->
