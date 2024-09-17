@@ -21,9 +21,9 @@
             <visualize>true</visualize>
             <update_rate>10</update_rate>
             <camera>
-                <horizontal_fov>1.5</horizontal_fov>
+                <horizontal_fov>1.089</horizontal_fov>
                 <image>
-                    <format>B8R8G8</format>
+                    <format>B8</format>
                     <width>640</width>
                     <height>480</height>
                 </image>
@@ -33,8 +33,6 @@
                 </clip>
             </camera>
             <plugin name="depth_camera_controller" filename="libgazebo_ros_camera.so">
-                <min_depth>0.1</min_depth>
-                <max_depth>5</max_depth>
                 <frame_name>camera_link_optical</frame_name>
             </plugin>
         </sensor>            
