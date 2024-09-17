@@ -7,3 +7,5 @@ This repository contains a **basic mobile robot simulation** designed for unders
 - **Depth Camera**: Offers depth perception for advanced navigation tasks.
 
 The robot is set up to work in simulation environments such as **Gazebo**, allowing users to explore concepts like sensor data processing, navigation, and robot control.
+
+![mobile_bot](rviz_screenshot_2024_09_17-10_16_23.png)
