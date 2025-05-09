@@ -20,6 +20,7 @@
   <depend>urdf</depend>
   <depend>std_msgs</depend>
   <depend>rviz2</depend>
+  <depend>ros_gz_interfaces</depend>
   
   <!-- Launch dependencies -->
   <exec_depend>ament_index_python</exec_depend>
