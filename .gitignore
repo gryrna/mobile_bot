@@ -6,3 +6,5 @@
 *.pyo
 *.pyd
 *.pyw
+ros2_bag_database/*
+# Ignore all folders in ros2_bag_database
