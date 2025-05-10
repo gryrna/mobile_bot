@@ -1,0 +1,65 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /home/gryrna/Documents/ros2_ws/src/mobile_bot/.venv/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot
+-- Install configuration: ""
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/description
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/description/depth_camera.xacro
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/description/robot_structure.xacro
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/description/lidar.xacro
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/description/inertial_macros.xacro
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/description/camera.xacro
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/description/robot.urdf.xacro
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/description/gazebo_control.xacro
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/launch
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/launch/rsp.launch.py
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/launch/__pycache__
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/launch/__pycache__/launch_sim.launch.cpython-310.pyc
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/launch/launch_sim.launch.py
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/worlds
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/worlds/new.world
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/worlds/mobile_bot.world
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/worlds/my_world.world
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/worlds/latest.world
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/worlds/empty.world
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/ament_index/resource_index/package_run_dependencies/mobile_bot
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/ament_index/resource_index/parent_prefix_path/mobile_bot
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/environment/ament_prefix_path.sh
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/environment/ament_prefix_path.dsv
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/environment/path.sh
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/environment/path.dsv
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/local_setup.bash
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/local_setup.sh
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/local_setup.zsh
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/local_setup.dsv
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/package.dsv
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/ament_index/resource_index/packages/mobile_bot
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/cmake/mobile_botConfig.cmake
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/cmake/mobile_botConfig-version.cmake
+-- Installing: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/package.xml

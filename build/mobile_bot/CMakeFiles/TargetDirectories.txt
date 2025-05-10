@@ -1,0 +1,9 @@
+/home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot/CMakeFiles/uninstall.dir
+/home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot/CMakeFiles/mobile_bot_uninstall.dir
+/home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot/CMakeFiles/test.dir
+/home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot/CMakeFiles/edit_cache.dir
+/home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot/CMakeFiles/rebuild_cache.dir
+/home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot/CMakeFiles/list_install_components.dir
+/home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot/CMakeFiles/install.dir
+/home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot/CMakeFiles/install/local.dir
+/home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot/CMakeFiles/install/strip.dir

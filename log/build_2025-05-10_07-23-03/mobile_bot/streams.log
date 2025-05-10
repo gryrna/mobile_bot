@@ -1,0 +1,36 @@
+[0.014s] Invoking command in '/home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot -- -j8 -l8
+[0.060s] Invoked command in '/home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot -- -j8 -l8
+[0.070s] Invoking command in '/home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --install /home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot
+[0.078s] -- Install configuration: ""
+[0.078s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/description
+[0.079s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/description/depth_camera.xacro
+[0.079s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/description/robot_structure.xacro
+[0.079s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/description/lidar.xacro
+[0.079s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/description/inertial_macros.xacro
+[0.079s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/description/camera.xacro
+[0.079s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/description/robot.urdf.xacro
+[0.079s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/description/gazebo_control.xacro
+[0.079s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/launch
+[0.079s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/launch/rsp.launch.py
+[0.079s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/launch/__pycache__
+[0.079s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/launch/__pycache__/launch_sim.launch.cpython-310.pyc
+[0.079s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/launch/launch_sim.launch.py
+[0.079s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/worlds
+[0.079s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/worlds/mobile_bot.world
+[0.079s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/worlds/my_world.world
+[0.079s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/ament_index/resource_index/package_run_dependencies/mobile_bot
+[0.080s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/ament_index/resource_index/parent_prefix_path/mobile_bot
+[0.080s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/environment/ament_prefix_path.sh
+[0.080s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/environment/ament_prefix_path.dsv
+[0.080s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/environment/path.sh
+[0.080s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/environment/path.dsv
+[0.080s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/local_setup.bash
+[0.080s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/local_setup.sh
+[0.080s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/local_setup.zsh
+[0.080s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/local_setup.dsv
+[0.080s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/package.dsv
+[0.080s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/ament_index/resource_index/packages/mobile_bot
+[0.080s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/cmake/mobile_botConfig.cmake
+[0.080s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/cmake/mobile_botConfig-version.cmake
+[0.080s] -- Up-to-date: /home/gryrna/Documents/ros2_ws/src/mobile_bot/install/mobile_bot/share/mobile_bot/package.xml
+[0.081s] Invoked command in '/home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --install /home/gryrna/Documents/ros2_ws/src/mobile_bot/build/mobile_bot

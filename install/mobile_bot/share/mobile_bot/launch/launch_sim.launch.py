@@ -15,7 +15,7 @@ def generate_launch_description():
 
     # Get the path to the world file
     world_file_path = os.path.join(
-        get_package_share_directory(package_name), "worlds", "training.world"
+        get_package_share_directory(package_name), "worlds", "latest.world"
     )
 
     # Launch Gazebo directly using gazebo_ros
@@ -51,12 +51,7 @@ def generate_launch_description():
     spawn_entity = Node(
         package="gazebo_ros",
         executable="spawn_entity.py",
-        arguments=[
-            "-topic",
-            "robot_description",
-            "-entity",
-            "mobile_bot"
-        ],
+        arguments=["-topic", "robot_description", "-entity", "mobile_bot"],
         output="screen",
     )
 
