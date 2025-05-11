@@ -6,5 +6,7 @@
 *.pyo
 *.pyd
 *.pyw
-ros2_bag_database/*
+# ros2_bag_database/low_light/
+# ros2_bag_database/low_obstacle/
+# ros2_bag_database/normal/
 # Ignore all folders in ros2_bag_database
