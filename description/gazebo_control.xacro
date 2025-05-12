@@ -24,4 +24,9 @@
 
         </plugin>
     </gazebo>
+    <gazebo>
+        <plugin name="model_state_publisher" filename="libgazebo_ros_state.so">
+            <update_rate>30</update_rate>
+        </plugin>
+    </gazebo>
 </robot>

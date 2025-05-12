@@ -1,5 +1,8 @@
 <sdf version='1.7'>
   <world name='default'>
+    <plugin name="model_state_publisher" filename="libgazebo_ros_state.so">
+        <update_rate>30</update_rate>
+    </plugin>
     <model name='ground_plane'>
       <static>1</static>
       <link name='link'>
