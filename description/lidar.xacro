@@ -48,6 +48,11 @@
                     <min>0.3</min>
                     <max>5</max>
                 </range>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.01</stddev>
+                </noise>
             </ray>
             <!--this plugin tag moves data in-out of Gazebo-->
             <plugin name="laser_controller" filename="libgazebo_ros_ray_sensor.so">

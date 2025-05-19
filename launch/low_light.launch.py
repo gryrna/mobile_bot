@@ -12,7 +12,7 @@ def generate_launch_description():
 
     # Get the path to the world file
     world_file_path = os.path.join(
-        get_package_share_directory(package_name), "worlds", "empty_new.world"
+        get_package_share_directory(package_name), "worlds", "low_light.world"
     )
 
     # Start gzserver with SystemPlugins

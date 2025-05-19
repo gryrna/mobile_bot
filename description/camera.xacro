@@ -31,6 +31,11 @@
                     <near>0.05</near>
                     <far>8.0</far>
                 </clip>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.03</stddev>
+                </noise>
             </camera>
             <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
                 <frame_name>camera_link_optical</frame_name>
