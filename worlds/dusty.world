@@ -61,12 +61,12 @@
     </physics>
     <scene>
       <fog>
-        <type>exp</type> <!-- or linear -->
-        <color>0.9 0.8 0.6 1</color> <!-- yellowish tone -->
-        <density>0.02</density>
-        </fog>
-      <ambient>0.4 0.4 0.4 1</ambient>
-      <background>0.9 0.9 0.9 1</background>
+        <type>exp</type> <!-- 'exp2' is also an option -->
+        <color>0.8 0.7 0.5 1</color> <!-- Warmer, earthier -->
+        <density>0.01</density> <!-- Subtle, reduces harsh washout -->
+      </fog>
+      <ambient>0.35 0.3 0.25 1</ambient> <!-- Earthy shadows -->
+      <background>0.85 0.8 0.75 1</background> <!-- Dust-tinted sky -->
     </scene>
     <audio>
       <device>default</device>
@@ -480,18 +480,18 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-    <light name='sun' type='directional'>
-      <cast_shadows>0</cast_shadows>
-      <pose>-8.18183 0.580648 10 0 -0 0</pose>
-      <diffuse>0.2 0.2 0.2 1</diffuse>
+    <light name="sun" type="directional">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.9 0.75 0.6 1</diffuse> <!-- Warm sunlight -->
       <specular>0.1 0.1 0.1 1</specular>
       <attenuation>
-        <range>1000</range>
+        <range>50</range>
         <constant>0.9</constant>
         <linear>0.01</linear>
         <quadratic>0.001</quadratic>
       </attenuation>
-      <direction>-0.5 0.5 -1.0</direction>
-      </light>
+      <direction>-0.5 0 -0.5</direction>
+    </light>
   </world>
 </sdf>

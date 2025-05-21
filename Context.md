@@ -21,10 +21,11 @@ The final goal is to generate **2,875 labeled samples** across 5 environments an
 **Obstacle Models:**
 
 - 23 total SDF models categorized as:
-  - **Normal**: Cabinet , Car wheel , Cardboard Box , Cinder block new , Construction Barrel , Construction Cone , Thin objects ,Fire Hydrant , Jersey barrier , Mailbox ,Standing Person
+  - **Normal**: Cabinet , Car wheel , Cardboard Box , Cinder block new , Construction Barrel , Construction Cone
+  - **Thin objects**:Fire Hydrant , Jersey barrier , Mailbox ,Standing Person
   - **Large**: Hatchback, Dumpster
   - **Small**: Beer ,Black_ball ,Black_ball_transparent ,Cinder block wide ,Coke Can ,Green ball ,Red Ball
-  - **Transparent**: Transparent_Cone ,Transparent_sheet_final ,Mesh ,Mesh round new
+  - **Transparent**: Transparent_Cone ,Transparent_sheet ,Mesh ,Mesh round
 - Stored in: `~/.gazebo/models/{model_name}/model.sdf`
 
 **Data Logger System:**
